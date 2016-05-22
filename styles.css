@@ -1,4 +1,4 @@
-body {
+body, h4, h3 {
   font-family: Futura;
   overflow:hidden;
   width:100%;
@@ -41,4 +41,8 @@ body {
   width: 100%;
   position: absolute;
   margin-top: 3px;
+}
+.tbl.btn.btn-primary {
+  background-color: #2A3A43;
+  border-color: black;
 }

@@ -80,7 +80,7 @@ class FuzzySearch extends Component {
               {this.results}
             </ul>
         </div>
-        <button type="submit" className="btn btn-primary">Find Your Table</button>
+        <button type="submit" className="btn btn-primary tbl">Find Your Table</button>
       </form>
     );
   }
