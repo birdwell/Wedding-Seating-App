@@ -11,9 +11,12 @@ const ListGroup = (props) => {
   });
 
   return (
-    <ul className="list-group">
-      {items}
-    </ul>
+    <span>
+      {!props.header || items.length === 0 ? null : <h4>{props.header}</h4>}
+      <ul className="list-group">
+        {items}
+      </ul>
+    </span>
   );
 };
 

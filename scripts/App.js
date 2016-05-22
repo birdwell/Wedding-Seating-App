@@ -52,8 +52,8 @@ export default class App extends Component {
     } else {
       return (
         <div>
-          <h4>We couldn't find your table <br/> Did you mean: </h4>
-          <ListGroup items={this.state.suggestions} onClick={this.showResult}/>
+          <h4>We couldn't find your table.</h4>
+          <ListGroup items={this.state.suggestions} header="Did you mean:" onClick={this.showResult}/>
           <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Try Again</button>
         </div>
       );
