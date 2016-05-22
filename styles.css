@@ -1,0 +1,14 @@
+body {
+  font-family: Futura;
+}
+.heading {
+  font-family: 'Parisienne', cursive;
+}
+.content {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
