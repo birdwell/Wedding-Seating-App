@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import fuzzy from 'fuzzy';
 
-const guests = [
-  {name: 'Josh Birdwell', table: 1},
-  {name: 'Madison Harry', table: 1},
-  {name: 'Don Birdwell', table: 3},
-  {name: 'Ann Harry', table: 2}
-];
+const guests = require('./names');
 
 class FuzzySearch extends Component {
   constructor(props){
     super(props);
 
     this.state = { term: '' };
+    this.suggestions = [];
     this.displaySearchResults = this.displaySearchResults.bind(this);
     this.onInputChange = this.onInputChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
@@ -37,8 +33,11 @@ class FuzzySearch extends Component {
       };
 
     const filtered = fuzzy.filter(search, guests, options);
+    this.suggestions = [];
 
-    this.results = filtered.map((person) => {
+    this.results = filtered.slice(0, 5).map((person) => {
+      this.suggestions.push(person.string);
+
       return (
         <li
           className="list-group-item"
@@ -57,7 +56,7 @@ class FuzzySearch extends Component {
   }
 
   searchComplete(name) {
-    this.props.showResult(name || this.state.term);
+    this.props.showResult(name || this.state.term, this.suggestions);
     this.setState({ term: '' });
     this.results = null;
   }
