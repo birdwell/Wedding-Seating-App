@@ -1,5 +1,5 @@
 body, h4, h3 {
-  font-family: Futura;
+  font-family: Futura !important;
   overflow:hidden;
   width:100%;
 }
@@ -15,7 +15,9 @@ body, h4, h3 {
   padding-right: 10%;
 }
 .result {
-  font-size: 8em;
+  font-size: 6em;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 .header-image {
   position: relative;
@@ -49,4 +51,11 @@ body, h4, h3 {
 .intro {
     padding-left: 5%;
     padding-right: 5%;
+}
+h4.tbl-header {
+  font-size: 2em;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family: Futura;
 }

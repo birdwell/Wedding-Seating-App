@@ -18,7 +18,7 @@ export default class App extends Component {
         table = person && seating[name].table,
         guests = person && seating[name].guests || null,
         guestsIntro = guests && `and ${guests} are` || 'is',
-        intro = `${name} ${guestsIntro} seated at table`;
+        intro = `${name} ${guestsIntro} seated at`;
 
     this.setState({ result: table || NOT_FOUND, intro: intro, showForm: false });
   }
@@ -27,10 +27,24 @@ export default class App extends Component {
     this.setState({ showForm: true, result: null, intro: null });
   }
 
-  render() {
-    let result = this.state.result || '',
-        intro = result !== NOT_FOUND ? this.state.intro : '';
+  showContent() {
+    if(this.state.showForm) {
+      return <FuzzySearch className="row" showResult={this.showResult}/>;
+      } else {
+        let result = this.state.result || '',
+            intro = result !== NOT_FOUND ? this.state.intro : '';
+        return (
+          <span>
+            <h4 className="intro">{intro}</h4>
+            <h4 className="tbl-header">Table</h4>
+            <h3 className="result">{result}</h3>
+            <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Find Another Seat</button>
+          </span>
+        );
+      }
+  }
 
+  render() {
     return (
         <section className="content">
           <div className="header-image">
@@ -39,10 +53,7 @@ export default class App extends Component {
           </div>
           <h2 className="heading">Wedding Seating</h2>
           <hr/>
-          {this.state.showForm ? <FuzzySearch className="row" showResult={this.showResult}/> : null}
-          <h4 className="intro">{intro}</h4>
-          <h3 className="result">{result}</h3>
-          {!this.state.showForm ? <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Find Another Seat</button> : null}
+          {this.showContent()}
         </section>
     );
   }
