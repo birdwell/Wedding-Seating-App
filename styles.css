@@ -1,5 +1,7 @@
 body {
   font-family: Futura;
+  overflow:hidden;
+  width:100%;
 }
 .heading {
   font-family: 'Parisienne', cursive;
@@ -14,4 +16,29 @@ body {
 }
 .result {
   font-size: 8em;
-}    
+}
+.header-image {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.background {
+  background-image: url('./headbutt.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  opacity: .8;
+}
+.logo {
+  background-image: url('./logo.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  height: 97%;
+  width: 100%;
+  position: absolute;
+  margin-top: 3px;
+}
