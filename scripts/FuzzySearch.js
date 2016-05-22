@@ -14,6 +14,7 @@ class FuzzySearch extends Component {
     this.state = { term: '' };
     this.displaySearchResults = this.displaySearchResults.bind(this);
     this.onInputChange = this.onInputChange.bind(this);
+    this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
   onInputChange(event) {
@@ -50,15 +51,26 @@ class FuzzySearch extends Component {
     });
   }
 
+  onFormSubmit(e) {
+    e.preventDefault();
+
+    this.props.showResult(this.state.term);
+    this.setState({ term: '' });
+    this.results = null;
+  }
+
   render() {
     return (
-      <form className="form-inline">
+      <form
+        autoComplete="off"
+        onSubmit={this.onFormSubmit}>
         <div className="form-group">
             <input
             placeholder="Enter your name"
             onKeyDown={this.displaySearchResults}
             onChange={this.onInputChange}
             type="text"
+            autoComplete="off"
             ref="fuzzyInput"
             id="search"
             value={this.state.term}
@@ -74,4 +86,5 @@ class FuzzySearch extends Component {
   }
 }
 
+FuzzySearch.propTypes = { showResult: React.PropTypes.func };
 export default FuzzySearch;
