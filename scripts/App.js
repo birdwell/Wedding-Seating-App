@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import FuzzySearch from './FuzzySearch';
+import Header from './Header';
 
 const seating = require('./seating');
 const NOT_FOUND = 'Not Found';
@@ -35,7 +36,9 @@ export default class App extends Component {
             intro = result !== NOT_FOUND ? this.state.intro : '';
         return (
           <span>
-            <h4 className="intro">{intro}</h4>
+            <div className="introContainer">
+              <p className="intro">{intro}</p>
+            </div>
             <h4 className="tbl-header">Table</h4>
             <h3 className="result">{result}</h3>
             <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Find Another Seat</button>
@@ -47,10 +50,7 @@ export default class App extends Component {
   render() {
     return (
         <section className="content">
-          <div className="header-image">
-              <div className="background"/>
-              <div className="logo"/>
-          </div>
+          <Header />
           <h2 className="heading">Wedding Seating</h2>
           <hr/>
           {this.showContent()}

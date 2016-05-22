@@ -48,14 +48,18 @@ body, h4, h3 {
   background-color: #2A3A43;
   border-color: black;
 }
-.intro {
-    padding-left: 5%;
-    padding-right: 5%;
-}
 h4.tbl-header {
   font-size: 2em;
   padding-top: 10px;
   padding-bottom: 0;
   margin-bottom: 0;
   font-family: Futura;
+}
+.introContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+.intro {
+  font-size: 16px;
+  font-weight: 100;
 }
