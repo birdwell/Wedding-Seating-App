@@ -69,7 +69,7 @@ class FuzzySearch extends Component {
         onSubmit={this.onFormSubmit}>
         <div className="form-group">
             <input
-            placeholder="Enter your name"
+            placeholder="Enter Your Name"
             onKeyDown={this.displaySearchResults}
             onChange={this.onInputChange}
             type="text"
