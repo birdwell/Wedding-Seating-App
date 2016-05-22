@@ -25,8 +25,7 @@ class FuzzySearch extends Component {
   }
 
   onResultClick(name) {
-    this.setState({ term: name });
-    this.refs.fuzzyInput.focus();
+    this.searchComplete(name);
   }
 
   displaySearchResults() {
@@ -54,8 +53,11 @@ class FuzzySearch extends Component {
 
   onFormSubmit(e) {
     e.preventDefault();
+    this.searchComplete();
+  }
 
-    this.props.showResult(this.state.term);
+  searchComplete(name) {
+    this.props.showResult(name || this.state.term);
     this.setState({ term: '' });
     this.results = null;
   }
