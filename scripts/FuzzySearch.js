@@ -4,7 +4,8 @@ import fuzzy from 'fuzzy';
 const guests = [
   {name: 'Josh Birdwell', table: 1},
   {name: 'Madison Harry', table: 2},
-  {name: 'Don Birdwell', table: 3}
+  {name: 'Don Birdwell', table: 3},
+  {name: 'Ann Harry'}
 ];
 
 class FuzzySearch extends Component {

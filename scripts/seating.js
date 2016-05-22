@@ -7,5 +7,10 @@ module.exports = {
     name: 'Madison Harry',
     table: 1,
     guests: 'Josh Birdwell'
+  },
+  'Ann Harry': {
+    name: 'Ann Harry',
+    table: 2,
+    guests: 'Aunt Mollie'
   }
 };
