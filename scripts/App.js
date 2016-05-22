@@ -41,7 +41,7 @@ export default class App extends Component {
           <hr/>
           {this.state.showForm ? <FuzzySearch className="row" showResult={this.showResult}/> : null}
           <h4 className="intro">{intro}</h4>
-          <h3 className="row result">{result}</h3>
+          <h3 className="result">{result}</h3>
           {!this.state.showForm ? <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Find Another Seat</button> : null}
         </section>
     );
