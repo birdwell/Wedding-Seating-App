@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react';
 
-const ListGroup = (props) => {
-  let items = props.items.map( (item) => {
+const ListGroup = ({items, onClick, header}) => {
+  let listItems = items.map( (item) => {
     return (
       <li
-        onClick={() => { props.onClick(item); } }
+        onClick={() => { onClick(item); } }
         className="list-group-item">
         {item}
       </li>);
@@ -12,16 +12,18 @@ const ListGroup = (props) => {
 
   return (
     <span>
-      {!props.header || items.length === 0 ? null : <h4>{props.header}</h4>}
+      {!header || length === 0 ? null : <h4>{header}</h4>}
       <ul className="list-group">
-        {items}
+        {listItems}
       </ul>
     </span>
   );
 };
 
 ListGroup.propTypes = {
-  listItems: React.PropTypes.array
+  items: PropTypes.array,
+  header: PropTypes.string,
+  onClick: PropTypes.func
 };
 
 export default ListGroup;

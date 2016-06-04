@@ -16,11 +16,11 @@ export default class App extends Component {
   }
 
   showResult(name, suggestions) {
-    let person = seating[name],
-        table = person && seating[name].table || null,
-        guests = person && seating[name].guests || null,
-        guestsIntro = guests && `and ${guests} are` || 'is',
-        intro = `${name} ${guestsIntro} seated at`;
+    let person = seating[name];
+    let table = person && seating[name].table || null;
+    let guests = person && seating[name].guests || null;
+    let guestsIntro = guests && `and ${guests} are` || 'is';
+    let intro = `${name} ${guestsIntro} seated at`;
 
     if(table){
       this.setState({ result: table || NOT_FOUND, intro: intro, showForm: false, showSuggestions: false });
@@ -34,18 +34,21 @@ export default class App extends Component {
   }
 
   showContent() {
-    if(this.state.showForm && !this.state.showSuggestions) {
+    const {showForm, showSuggestions, suggestions} = this.state;
+
+    if (showForm && !showSuggestions) {
       return <FuzzySearch className="row" showResult={this.showResult}/>;
-    } else if (!this.state.showSuggestions) {
-        let result = this.state.result || '',
-            intro = result !== NOT_FOUND ? this.state.intro : '';
+    } else if (!showSuggestions) {
+        let {result} = this.state;
+        let intro = result !== NOT_FOUND ? this.state.intro : '';
+
         return (
           <span>
             <div className="introContainer">
               <p className="intro">{intro}</p>
             </div>
             <h4 className="tbl-header">Table</h4>
-            <h3 className="result">{result}</h3>
+            <h3 className="result">{result || ''}</h3>
             <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Find Another Seat</button>
           </span>
         );
@@ -53,7 +56,7 @@ export default class App extends Component {
       return (
         <div>
           <h4>We couldn't find your table.</h4>
-          <ListGroup items={this.state.suggestions} header="Did you mean:" onClick={this.showResult}/>
+          <ListGroup items={suggestions} header="Did you mean:" onClick={this.showResult}/>
           <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Try Again</button>
         </div>
       );

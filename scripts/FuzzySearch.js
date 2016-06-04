@@ -9,6 +9,8 @@ class FuzzySearch extends Component {
 
     this.state = { term: '' };
     this.suggestions = [];
+
+    // Bind function callbacks
     this.displaySearchResults = this.displaySearchResults.bind(this);
     this.onInputChange = this.onInputChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
@@ -25,8 +27,8 @@ class FuzzySearch extends Component {
   }
 
   displaySearchResults() {
-    const search = this.state.term,
-      options = {
+    const search = this.state.term;
+    const options = {
         extract(element){
             return element.name;
           }
