@@ -29,10 +29,10 @@ class FuzzySearch extends Component {
   displaySearchResults() {
     const search = this.state.term;
     const options = {
-        extract(element){
-            return element.name;
-          }
-      };
+      extract(element){
+        return element.name;
+      }
+    };
 
     const filtered = fuzzy.filter(search, guests, options);
     this.suggestions = [];
@@ -69,7 +69,7 @@ class FuzzySearch extends Component {
         autoComplete="off"
         onSubmit={this.onFormSubmit}>
         <div className="form-group">
-            <input
+          <input
             placeholder="Enter Your Name"
             onKeyDown={this.displaySearchResults}
             onChange={this.onInputChange}
@@ -79,10 +79,10 @@ class FuzzySearch extends Component {
             id="search"
             value={this.state.term}
             className="search form-control">
-            </input>
-            <ul className="list-group" id="lists">
-              {this.results}
-            </ul>
+          </input>
+          <ul className="list-group" id="lists">
+            {this.results}
+          </ul>
         </div>
         <button type="submit" className="btn btn-primary tbl">Find Your Table</button>
       </form>

@@ -39,19 +39,19 @@ export default class App extends Component {
     if (showForm && !showSuggestions) {
       return <FuzzySearch className="row" showResult={this.showResult}/>;
     } else if (!showSuggestions) {
-        let {result} = this.state;
-        let intro = result !== NOT_FOUND ? this.state.intro : '';
+      let {result} = this.state;
+      let intro = result !== NOT_FOUND ? this.state.intro : '';
 
-        return (
-          <span>
-            <div className="introContainer">
-              <p className="intro">{intro}</p>
-            </div>
-            <h4 className="tbl-header">Table</h4>
-            <h3 className="result">{result || ''}</h3>
-            <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Find Another Seat</button>
-          </span>
-        );
+      return (
+        <span>
+          <div className="introContainer">
+            <p className="intro">{intro}</p>
+          </div>
+          <h4 className="tbl-header">Table</h4>
+          <h3 className="result">{result || ''}</h3>
+          <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Find Another Seat</button>
+        </span>
+      );
     } else {
       return (
         <div>
@@ -65,12 +65,12 @@ export default class App extends Component {
 
   render() {
     return (
-        <section className="content">
-          <Header />
-          <h2 className="heading">Wedding Seating</h2>
-          <hr/>
-          {this.showContent()}
-        </section>
+      <section className="content">
+        <Header />
+        <h2 className="heading">Wedding Seating</h2>
+        <hr/>
+        {this.showContent()}
+      </section>
     );
   }
 }
