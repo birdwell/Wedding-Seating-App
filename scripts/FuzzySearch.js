@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import fuzzy from 'fuzzy';
 
-const guests = [
-  {name: 'Josh Birdwell', table: 1},
-  {name: 'Madison Harry', table: 2},
-  {name: 'Don Birdwell', table: 3}
-];
+const guests = require('./names');
 
 class FuzzySearch extends Component {
   constructor(props){
     super(props);
 
     this.state = { term: '' };
+    this.suggestions = [];
+
+    // Bind function callbacks
     this.displaySearchResults = this.displaySearchResults.bind(this);
     this.onInputChange = this.onInputChange.bind(this);
+    this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
   onInputChange(event) {
@@ -23,21 +23,23 @@ class FuzzySearch extends Component {
   }
 
   onResultClick(name) {
-    this.setState({ term: name });
-    this.refs.fuzzyInput.focus();
+    this.searchComplete(name);
   }
 
   displaySearchResults() {
-    const search = this.state.term,
-      options = {
-        extract(element){
-            return element.name;
-          }
-      };
+    const search = this.state.term;
+    const options = {
+      extract(element){
+        return element.name;
+      }
+    };
 
     const filtered = fuzzy.filter(search, guests, options);
+    this.suggestions = [];
 
-    this.results = filtered.map((person) => {
+    this.results = filtered.slice(0, 5).map((person) => {
+      this.suggestions.push(person.string);
+
       return (
         <li
           className="list-group-item"
@@ -50,28 +52,43 @@ class FuzzySearch extends Component {
     });
   }
 
+  onFormSubmit(e) {
+    e.preventDefault();
+    this.searchComplete();
+  }
+
+  searchComplete(name) {
+    this.props.showResult(name || this.state.term, this.suggestions);
+    this.setState({ term: '' });
+    this.results = null;
+  }
+
   render() {
     return (
-      <form className="form-inline">
+      <form
+        autoComplete="off"
+        onSubmit={this.onFormSubmit}>
         <div className="form-group">
-            <input
-            placeholder="Enter your name"
+          <input
+            placeholder="Enter Your Name"
             onKeyDown={this.displaySearchResults}
             onChange={this.onInputChange}
             type="text"
+            autoComplete="off"
             ref="fuzzyInput"
             id="search"
             value={this.state.term}
             className="search form-control">
-            </input>
-            <ul className="list-group" id="lists">
-              {this.results}
-            </ul>
+          </input>
+          <ul className="list-group" id="lists">
+            {this.results}
+          </ul>
         </div>
-        <button type="submit" className="btn btn-primary">Find Your Table</button>
+        <button type="submit" className="btn btn-primary tbl">Find Your Table</button>
       </form>
     );
   }
 }
 
+FuzzySearch.propTypes = { showResult: React.PropTypes.func };
 export default FuzzySearch;

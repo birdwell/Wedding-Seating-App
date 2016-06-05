@@ -1,5 +1,7 @@
-body {
-  font-family: Futura;
+body, h4, h3 {
+  font-family: Futura !important;
+  overflow:hidden;
+  width:100%;
 }
 .heading {
   font-family: 'Parisienne', cursive;
@@ -11,4 +13,53 @@ body {
   margin-bottom: 10px;
   padding-left: 10%;
   padding-right: 10%;
+}
+.result {
+  font-size: 6em;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.header-image {
+  position: relative;
+  width: 100%;
+  height: 105px;
+}
+.background {
+  background-image: url('./headbutt.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  opacity: .8;
+}
+.logo {
+  background-image: url('./logo.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  height: 97%;
+  width: 100%;
+  position: absolute;
+  margin-top: 3px;
+}
+.tbl.btn.btn-primary {
+  background-color: #2A3A43;
+  border-color: black;
+}
+h4.tbl-header {
+  font-size: 2em;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family: Futura;
+}
+.introContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+.intro {
+  font-size: 16px;
+  font-weight: 100;
 }
