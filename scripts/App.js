@@ -10,12 +10,15 @@ export default class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { result: '', intro: '', showForm: true, showSuggestions: false};
-    this.showResult = this.showResult.bind(this);
-    this.onButtonClick = this.onButtonClick.bind(this);
+    this.state = {
+      result: '',
+      intro: '',
+      showForm: true,
+      showSuggestions: false
+    };
   }
 
-  showResult(name, suggestions) {
+  showResult = (name, suggestions) => {
     let person = seating[name];
     let table = person && seating[name].table || null;
     let guests = person && seating[name].guests || null;
@@ -29,7 +32,7 @@ export default class App extends Component {
     }
   }
 
-  onButtonClick() {
+  onButtonClick = () => {
     this.setState({ showForm: true, result: null, intro: null, showSuggestions: false });
   }
 
