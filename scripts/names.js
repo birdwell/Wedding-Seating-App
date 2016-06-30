@@ -1,437 +1,590 @@
 module.exports = [
   {
-    'name': 'Abby McDougal'
+    "name":"Jamie Self"
   },
   {
-    'name': 'Andrew Ligon'
+    "name":"Greg Self"
   },
   {
-    'name': 'Anna McDougal and Matthew DeKoning'
+    "name":"Isaac Self"
   },
   {
-    'name': 'Audrey McKenzie'
+    "name":"Crystal Self"
   },
   {
-    'name': 'Caleb Spear'
+    "name":"Collin Self"
   },
   {
-    'name': 'Carol and Ken Parker'
+    "name":"Todd James "
   },
   {
-    'name': 'Christian Kemp'
+    "name":"Larry Paniagua"
   },
   {
-    'name': 'Daniel Starks'
+    "name":"Jan Bell"
   },
   {
-    'name': 'Alfred Zaleta'
+    "name":"Nick Jackson"
   },
   {
-    'name': 'Bill Zaleta'
+    "name":"Morgan Peterson"
   },
   {
-    'name': 'Hillary Holt'
+    "name":"Bruce Jackson"
   },
   {
-    'name': 'Jeff Drebes'
+    "name":"Christin Adkins"
   },
   {
-    'name': 'Katie Raver'
+    "name":"Mike Adkins"
   },
   {
-    'name': 'Maggie Rogers'
+    "name":"Susan Shebester"
   },
   {
-    'name': 'Steve and Tammy Harry'
+    "name":"Scott Coleman"
   },
   {
-    'name': "The St. Cyr's"
+    "name":"Kate Adkins"
   },
   {
-    'name': 'Debbie and Kenny Altman'
+    "name":"MarySue Green"
   },
   {
-    'name': 'Gary Black'
+    "name":"Cindy McGowan"
   },
   {
-    'name': 'George Zaleta'
+    "name":"Glenda Raver"
   },
   {
-    'name': 'Ester McAfee'
+    "name":"Mollie Outhier"
   },
   {
-    'name': 'Haley and Ben Gremillion'
+    "name":"Leigh Blodgett"
   },
   {
-    'name': "Heather O'Keefe"
+    "name":"Ceige Taylor"
   },
   {
-    'name': 'Janina Graves'
+    "name":"Ann Harry"
   },
   {
-    'name': 'Kara Klamm'
+    "name":"Katie Raver"
   },
   {
-    'name': 'Katrina and Norm Cochran'
+    "name":"Jessica Fones"
   },
   {
-    'name': 'Kelli Filson'
+    "name":"Jeff Fones"
   },
   {
-    'name': 'Kelsey Anderson'
+    "name":"Hannah Fones"
   },
   {
-    'name': 'Kenzie Wahl and Logan Scott'
+    "name":"Jean Birdwell"
   },
   {
-    'name': 'Kerstin Minton'
+    "name":"Sam Birdwell"
   },
   {
-    'name': 'Lisa Pearce'
+    "name":"Bob Fones"
   },
   {
-    'name': 'Madison Cotherman'
+    "name":"Dee Fones"
   },
   {
-    'name': 'Mary Birdsong Gabriel'
+    "name":"LaDonna Turner"
   },
   {
-    'name': 'Megan and Josh Peterson'
+    "name":"Laura Birdwell"
   },
   {
-    'name': 'Michael Bartley'
+    "name":"Jeff Howard"
   },
   {
-    'name': 'Jennifer and Mike Moradi'
+    "name":"LaNell Birdwell"
   },
   {
-    'name': 'Mr. and Mrs. Jody Smith'
+    "name":"Tommy Birdwell"
   },
   {
-    'name': 'Mr. and Mrs. Minton'
+    "name":"Teresa Birdwell"
   },
   {
-    'name': 'Mr. and Mrs. Richard Ross'
+    "name":"Maxine Zaleta"
   },
   {
-    'name': 'Sheridan and Justin Southwell'
+    "name":"Henry Zaleta"
   },
   {
-    'name': 'Taylor Harry'
+    "name":"Don Birdwell"
   },
   {
-    'name': 'Velma Rogers'
+    "name":"Megan Peterson"
   },
   {
-    'name': 'Addison and Trey Witzel'
+    "name":"Josh Peterson"
   },
   {
-    'name': 'Alexis Lightfoot'
+    "name":"Bethany Lorenz"
   },
   {
-    'name': 'Ali Syed'
+    "name":"Robbie Lorenz"
   },
   {
-    'name': 'Allie and Matt Parker'
+    "name":"Todd Harry"
   },
   {
-    'name': 'Andrea Cain'
+    "name":"Steve Harry"
   },
   {
-    'name': 'Ann Harry'
+    "name":"Tammy Harry"
   },
   {
-    'name': 'Annette and Chip Outhier'
+    "name":"Cadence Peterson"
   },
   {
-    'name': 'Ashley and Jason Simon'
+    "name":"Taylor Harry"
   },
   {
-    'name': 'Ashley and Keith Phifer'
+    "name":"Heather Harry"
   },
   {
-    'name': 'Ashley and Nick Pettiet'
+    "name":"Ashlynne Harry"
   },
   {
-    'name': 'Aslan Maleki'
+    "name":"Maggie Harry"
   },
   {
-    'name': 'Aubrey Scott'
+    "name":"Alex Harry"
   },
   {
-    'name': 'Barbara and Larry Leaf'
+    "name":"Shelbi Jordan"
   },
   {
-    'name': 'Bethany and Robbie Lorenz'
+    "name":"Justin Jordan"
   },
   {
-    'name': 'Bruce Jackson'
+    "name":"Nick Pettiet"
   },
   {
-    'name': 'Caitlin Maddox'
+    "name":"Andrew Pettiet"
   },
   {
-    'name': 'Cari and Jason Warfe'
+    "name":"Ashley Pettiet"
   },
   {
-    'name': 'Carol and David Zaleta'
+    "name":"Kristin Vermillion"
   },
   {
-    'name': 'Chad Fulton'
+    "name":"Katrina Cochran"
   },
   {
-    'name': 'Charlotte and Charles Lewis'
+    "name":"Norman Cochran"
   },
   {
-    'name': 'Chelsea and Sean McLean'
+    "name":"Mark Harry"
   },
   {
-    'name': 'Chelsy and Paul Johnson'
+    "name":"Lisa Harry"
   },
   {
-    'name': 'Cheyanne Myers'
+    "name":"Lizzie Harry"
   },
   {
-    'name': 'Cheyenne and John Gagner'
+    "name":"Abby McDougal"
   },
   {
-    'name': 'Cindy McGowan'
+    "name":"Allie Parker"
   },
   {
-    'name': 'Claire and Tom Ward'
+    "name":"Matt Parker"
   },
   {
-    'name': 'Claudia and Jim Miller'
+    "name":"Brain McDougal"
   },
   {
-    'name': 'Collin Self'
+    "name":"Sandy McDougal"
   },
   {
-    'name': 'Colton Meeks'
+    "name":"Debby Gresh"
   },
   {
-    'name': 'Courtney and JC Bowie'
+    "name":"Emily Gresh"
   },
   {
-    'name': 'Courtney Methvin'
+    "name":"Frank Gresh"
   },
   {
-    'name': 'The Self Family'
+    "name":"Heath Ashby"
   },
   {
-    'name': 'Dan Birdwell'
+    "name":"Macie Ashby"
   },
   {
-    'name': 'Don Birdwell and Family'
+    "name":"Reagan Ashby"
   },
   {
-    'name': 'Drew Ewart'
+    "name":"Carter Ashby"
   },
   {
-    'name': 'Ellen and Austin Borjas'
+    "name":"Mark Stroud"
   },
   {
-    'name': 'Gary Brammer'
+    "name":"Collin Stroud"
   },
   {
-    'name': 'Glenda, Jesse, and Avery Raver'
+    "name":"Gunnar Stroud"
   },
   {
-    'name': 'Gordon Wynn'
+    "name":"Diane Stroud"
   },
   {
-    'name': 'Jan Bell'
+    "name":"Velma Rogers"
   },
   {
-    'name': 'Jane and Brian Shipp'
+    "name":"Jeanie Caldwell"
   },
   {
-    'name': 'Jean and Sam Birdwell'
+    "name":"Pat Smith"
   },
   {
-    'name': 'Jeanie and Charlie Caldwell'
+    "name":"Jody Smith"
   },
   {
-    'name': 'Jessica and Jeff Fones'
+    "name":"Richard Ross"
   },
   {
-    'name': 'Jessica Bowie'
+    "name":"Barbara Leaf"
   },
   {
-    'name': 'Jordan Rafter and Ragan Land'
+    "name":"Larry Leaf"
   },
   {
-    'name': 'Josh Imbriani'
+    "name":"Ann Ross"
   },
   {
-    'name': 'Kaley and Tucker Field'
+    "name":"Punky Boeckman"
   },
   {
-    'name': 'Kallie and Bob Horn'
+    "name":"Mrs. Nell Outhier"
   },
   {
-    'name': 'Keelee Bright'
+    "name":"Ko-Ko Kirkhart"
   },
   {
-    'name': 'Kelsey Duepner'
+    "name":"Randall Kirkhart"
   },
   {
-    'name': 'Kelsey Kendall'
+    "name":"Annette Outhier"
   },
   {
-    'name': 'Ko-Ko and Randall Kirkhart'
+    "name":"Paul Blodgett"
   },
   {
-    'name': 'Kristin Vermillion'
+    "name":"Arvella Blodgett"
   },
   {
-    'name': 'Kyndal Sutton'
+    "name":"Chip Outhier"
   },
   {
-    'name': 'LaDonna and Cory Turner'
+    "name":"Turk Baykal "
   },
   {
-    'name': 'LaNell and Tommy Birdwell'
+    "name":"Jana Baykal"
   },
   {
-    'name': 'Leslie Coffman'
+    "name":"Lucas Baykal"
   },
   {
-    'name': 'Mary and Mitch Le'
+    "name":"Annah Baykal"
   },
   {
-    'name': 'MarySue Green'
+    "name":"Duke Johnson"
   },
   {
-    'name': 'Matt Stangel'
+    "name":"Mary Le"
   },
   {
-    'name': 'Mickey Clagg'
+    "name":"Mitch Le"
   },
   {
-    'name': 'Mr. and Mrs. Bob Sandifer'
+    "name":"Brylee Neeley"
   },
   {
-    'name': 'Mr. and Mrs. Curtis G. Ward'
+    "name":"Chris Morris "
   },
   {
-    'name': 'Mr. and Mrs. Paul Blodgett'
+    "name":"Lisa Pearce"
   },
   {
-    'name': 'Mr. and Mrs. W. G. Thompson'
+    "name":"Haley Gremillion"
   },
   {
-    'name': 'Mrs. Nell Outhier'
+    "name":"Keri Ringwald"
   },
   {
-    'name': 'Pacifique Mahoro'
+    "name":"Scott Ringwald"
   },
   {
-    'name': 'Peggy Eades'
+    "name":"Emilee Ringwald"
   },
   {
-    'name': 'Punky and John Boeckman'
+    "name":"Haylee Ringwald"
   },
   {
-    'name': 'Sandy and Brian McDougal'
+    "name":"Stephanie Fry"
   },
   {
-    'name': 'Sarah Sauer and Reilee Berger'
+    "name":"Roger Fry"
   },
   {
-    'name': 'Shirley and Jim Johnston'
+    "name":"Ellen Borjas"
   },
   {
-    'name': 'Stephanie and Roger Fry'
+    "name":"Austin Borjas"
   },
   {
-    'name': 'Summer Sudds'
+    "name":"Jordan Land"
   },
   {
-    'name': 'Teresa and Richard Carrington'
+    "name":"Cody Chaloner"
   },
   {
-    'name': 'Teresa Birdwell'
+    "name":"Sarah Chaloner"
   },
   {
-    'name': "The Ashby's"
+    "name":"Ragan Land"
   },
   {
-    'name': "The Baykal's"
+    "name":"Cheyanne Myers"
   },
   {
-    'name': "The Cleveland's"
+    "name":"Summer Sudds"
   },
   {
-    'name': "The Coleman's"
+    "name":"Kyndal Sutton"
   },
   {
-    'name': "The Florence's"
+    "name":"Alexis Lightfoot"
   },
   {
-    'name': "The Gresh's"
+    "name":"Kara Klamm"
   },
   {
-    'name': 'The Johnson Family'
+    "name":"Janina Graves"
   },
   {
-    'name': "The Jordan's"
+    "name":"Michael Bartley"
   },
   {
-    'name': "The Ringwald's"
+    "name":"Laurie Cleveland"
   },
   {
-    'name': 'The Stroud Family'
+    "name":"Michael Cleveland"
   },
   {
-    'name': 'Todd James and Larry Paniagua'
+    "name":"Evvie Cleveland"
   },
   {
-    'name': 'Vicki and Dan Logan'
+    "name":"Corbyn Cleveland"
   },
   {
-    'name': 'Vlad Marc-Charles'
+    "name":"Darcie St. Cyr"
   },
   {
-    'name': 'Yuvraj Rana'
+    "name":"Bob Horn"
   },
   {
-    'name': 'Zach Taylor'
+    "name":"Kallie Horn"
   },
   {
-    'name': 'Zane Taylor'
+    "name":"Vicki Logan"
   },
   {
-    'name': 'Mollie Outhier and Leigh Blodgett'
+    "name":"Dan Logan"
   },
   {
-    'name': 'Ronna Perkins'
+    "name":"Barbara Minton"
   },
   {
-    'name': "The Chaloner's"
+    "name":"Lynn Minton"
   },
   {
-    'name': 'Susan Shebester'
+    "name":"Jane Shipp"
   },
   {
-    'name': 'Alix Jackson'
+    "name":"Hope Shipp"
   },
   {
-    'name': 'Nick Jackson'
+    "name":"Holly Ship"
   },
   {
-    'name': 'John Daugherty'
+    "name":"Brian Shipp"
   },
   {
-    'name': 'Pat & Jody Smith'
+    "name":"Vlad Marc-Charles"
   },
   {
-    'name': 'Steve Starks'
+    "name":"John Daugherty"
   },
   {
-    'name': 'Maddie Likins'
+    "name":"Terry Murphy"
   },
   {
-    'name': 'Josh Birdwell'
+    "name":"Cathy Murphy"
+  },
+  {
+    "name":"David Zaleta"
+  },
+  {
+    "name":"Leo Zaleta"
+  },
+  {
+    "name":"Vicky Zaleta"
+  },
+  {
+    "name":"Ester McAfee"
+  },
+  {
+    "name":"Shannon Vallier"
+  },
+  {
+    "name":"Don Vallier"
+  },
+  {
+    "name":"Jessica Vallier"
+  },
+  {
+    "name":"Trey Florence"
+  },
+  {
+    "name":"David Florence"
+  },
+  {
+    "name":"Shirley Johnston"
+  },
+  {
+    "name":"Jim Johnston"
+  },
+  {
+    "name":"Karen Florence"
+  },
+  {
+    "name":"Andrew Ligon"
+  },
+  {
+    "name":"Elizabeth Rhoades"
+  },
+  {
+    "name":"Kaley Field"
+  },
+  {
+    "name":"Tucker Field"
+  },
+  {
+    "name":"Carol Parker"
+  },
+  {
+    "name":"Pacifique Mahoro"
+  },
+  {
+    "name":"Jeff Drebes"
+  },
+  {
+    "name":"Ken Parker"
+  },
+  {
+    "name":"Drew Ewart"
+  },
+  {
+    "name":"Breanna Nunnemaker"
+  },
+  {
+    "name":"Aslan Maleki"
+  },
+  {
+    "name":"Chad Fulton"
+  },
+  {
+    "name":"Zac Taylor"
+  },
+  {
+    "name":"Steve Starks"
+  },
+  {
+    "name":"Yuvraj Rana"
+  },
+  {
+    "name":"Daniel Starks"
+  },
+  {
+    "name":"Kenzie Wahl"
+  },
+  {
+    "name":"Caitlin Maddox "
+  },
+  {
+    "name":"Audrey McKenzie"
+  },
+  {
+    "name":"Peggy Eades"
+  },
+  {
+    "name":"Hillary Holt"
+  },
+  {
+    "name":"Maggie Rogers"
+  },
+  {
+    "name":"Haley Rogers"
+  },
+  {
+    "name":"Madison Cotherman"
+  },
+  {
+    "name":"Sheridan Southwell"
+  },
+  {
+    "name":"Justin Southwell"
+  },
+  {
+    "name":"Courtney Methvin"
+  },
+  {
+    "name":"Christian Kemp"
+  },
+  {
+    "name":"Kelli Filson"
+  },
+  {
+    "name":"Kelsey Anderson"
+  },
+  {
+    "name":"Craig Exendine"
+  },
+  {
+    "name":"Maddie Likins "
+  },
+  {
+    "name":"Sarah Sauer"
+  },
+  {
+    "name":"Reilee Berger"
+  },
+  {
+    "name":"JC Bowie"
+  },
+  {
+    "name":"Courtney Bowie"
+  },
+  {
+    "name":"Ali Syed"
+  },
+  {
+    "name":"Kelsey Kendall"
+  },
+  {
+    "name":"Dolly Patel"
   }
 ];

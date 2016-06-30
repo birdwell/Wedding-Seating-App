@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
+
 import FuzzySearch from './FuzzySearch';
 import Header from './Header';
 import ListGroup from './ListGroup';
+import Result from './Result';
 
 const seating = require('./seating');
 const NOT_FOUND = 'Not Found';
@@ -12,49 +14,40 @@ export default class App extends Component {
 
     this.state = {
       result: '',
-      intro: '',
+      value: '',
       showForm: true,
       showSuggestions: false
     };
   }
 
   showResult = (name, suggestions) => {
-    let person = seating[name];
-    let table = person && seating[name].table || null;
-    let guests = person && seating[name].guests || null;
-    let guestsIntro = guests && `and ${guests} are` || 'is';
-    let intro = `${name} ${guestsIntro} seated at`;
+    const person = seating[name];
+    if (!person || !person.table) {
+      this.setState({ result: NOT_FOUND, suggestions: suggestions });
+      return;
+    }
+
+    const {table, guests} = person;
+    let guestsIntro = (guests.length > 0 && `and ${guests.join(', ')} are`) || 'is';
+    let value = `${name} ${guestsIntro} seated at`;
 
     if(table){
-      this.setState({ result: table || NOT_FOUND, intro: intro, showForm: false, showSuggestions: false });
-    } else {
-      this.setState({ showSuggestions: true, suggestions: suggestions });
+      this.setState({ result: table || NOT_FOUND, value, showForm: false, showSuggestions: false });
     }
   }
 
   onButtonClick = () => {
-    this.setState({ showForm: true, result: null, intro: null, showSuggestions: false });
+    this.setState({ showForm: true, result: null, value: null, showSuggestions: false });
   }
 
   showContent() {
     const {showForm, showSuggestions, suggestions} = this.state;
+    const {value, result} = this.state;
 
-    if (showForm && !showSuggestions) {
+    if (!value && !result) {
       return <FuzzySearch className="row" showResult={this.showResult}/>;
-    } else if (!showSuggestions) {
-      let {result} = this.state;
-      let intro = result !== NOT_FOUND ? this.state.intro : '';
-
-      return (
-        <span>
-          <div className="introContainer">
-            <p className="intro">{intro}</p>
-          </div>
-          <h4 className="tbl-header">Table</h4>
-          <h3 className="result">{result || ''}</h3>
-          <button className="btn btn-primary tbl" onClick={this.onButtonClick}>Find Another Seat</button>
-        </span>
-      );
+    } else if (result !== NOT_FOUND && value) {
+      return <Result intro={value} result={result} onButtonClick={this.onButtonClick} />
     } else {
       return (
         <div>
